@@ -1,0 +1,70 @@
+[user]
+    name = Josh Lindsay
+	user = jlindsayDev
+	email = 182923+jlindsayDev@users.noreply.github.com
+    signingKey = ~/.ssh/id_ed25519.pub
+
+# Service Credentials
+#[github]
+#	user = jlindsayDev
+#	email = 182923+jlindsayDev@users.noreply.github.com
+#[gitlab]
+#	user = jlindsayDev
+#	email = 652996-jlindsayDev@users.noreply.gitlab.com
+#[bitbucket]
+#	user = j000sh
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[hub]
+	protocol = ssh
+
+# Sign Commits
+
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+	forceSignAnnotated = true
+
+[init]
+	defaultBranch = main
+[core]
+	pager = diff-so-fancy | less --tabs=4 -FRSX
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	editor = nano
+	excludesfile = /Users/josh/.config/git/gitignore_global
+    sparseCheckoutCone = false
+[status]
+	short = true
+[branch]
+	autoSetupMerge = always
+[push]
+	ff = true
+	autoSetupRemote = true
+[pull]
+	ff = true
+[merge]
+	ff = true
+[log]
+	decorate = short
+    showSignature = true
+[difftool]
+	prompt = false
+[interactive]
+	diffFilter = diff-so-fancy --patch
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[include]
+	path = ~/.config/git/color.gitconfig
+
+[include]
+	path = ~/.config/git/alias.gitconfig

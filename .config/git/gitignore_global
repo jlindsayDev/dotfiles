@@ -1,0 +1,59 @@
+
+# Compiled source
+*.rbc
+*.pyc
+*.pyo
+
+# IDE specific
+dwsync.xml
+*.tmp
+*.wpr
+*.project
+*.cproject
+*.tmproj
+*.tmproject
+*.vi
+*.komodoproject
+.komodotools
+nbproject
+.nova/
+# OS generated files
+._*
+.cache
+.Spotlight-V100
+.Trashes
+.DS_Store
+desktop.ini
+ehthumbs.db
+Thumbs.db
+
+# Other dev-related files
+*.bak
+*.orig
+*.sass-cache
+.directory
+*~
+.svn/*
+*.swp
+svn-commit.*
+tags
+TAGS
+
+npm-debug.log*
+yarn-error.log
+testem.log
+
+# dev directories
+node_modules
+vendor/bundle
+bower_components
+.idea
+.vscode/
+
+# Version management configurations
+.tool-versions
+
+# direcories that should not sync
+*.nosync/
+*.nosync
+
