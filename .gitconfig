@@ -14,9 +14,8 @@
 #[bitbucket]
 #	user = j000sh
 [credential]
+	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [hub]
 	protocol = ssh
 
@@ -42,11 +41,13 @@
 	short = true
 [branch]
 	autoSetupMerge = always
+	autosetuprebase = always
 [push]
 	ff = true
 	autoSetupRemote = true
 [pull]
 	ff = true
+	rebase = true
 [merge]
 	ff = true
 [log]
@@ -68,3 +69,5 @@
 
 [include]
 	path = ~/.config/git/alias.gitconfig
+[credential "https://dev.azure.com"]
+	useHttpPath = true
