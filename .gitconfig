@@ -1,8 +1,8 @@
 [user]
-    name = Josh Lindsay
+	name = Josh Lindsay
 	user = jlindsayDev
 	email = 182923+jlindsayDev@users.noreply.github.com
-    signingKey = ~/.ssh/id_ed25519.pub
+	signingKey = ~/.ssh/id_ed25519.pub
 
 # Service Credentials
 #[github]
@@ -13,9 +13,11 @@
 #	email = 652996-jlindsayDev@users.noreply.gitlab.com
 #[bitbucket]
 #	user = j000sh
+
 [credential]
 	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
+
 [hub]
 	protocol = ssh
 
@@ -24,9 +26,9 @@
 [gpg]
 	format = ssh
 [commit]
-	gpgSign = true
+	gpgSign = false
 [tag]
-	gpgSign = true
+	gpgSign = false
 	forceSignAnnotated = true
 
 [init]
@@ -52,7 +54,6 @@
 	ff = true
 [log]
 	decorate = short
-    showSignature = true
 [difftool]
 	prompt = false
 [interactive]
